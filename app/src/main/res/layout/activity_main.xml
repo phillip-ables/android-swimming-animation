@@ -11,5 +11,18 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/drowning1" />
+        app:srcCompat="@drawable/drowning1"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="238dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/animateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Start"/>
 </RelativeLayout>
