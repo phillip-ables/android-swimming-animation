@@ -17,19 +17,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button start = findViewById(R.id.animateBtn);
-        //ImageView man = findViewById(R.id.imageView);
-        //AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
-        //got an error this is the best response on stack overflow
-        Drawable man = getResources().getDrawable(R.drawable.drowning_man);
-        AnimationDrawable drowning_man = (AnimationDrawable)man;
-
-        drowning_man.start();
-
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d("click","button has been clicked");
+                ImageView man = findViewById(R.id.imageView);
+                man.setImageResource(R.drawable.drowning_man);
+                AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+                //got an error this is the best response on stack overflow
+                //Drawable manDraw = man.getResources().getDrawable(R.drawable.drowning_man);
+                //AnimationDrawable drowning_man = (AnimationDrawable)manDraw;
+                //AnimationDrawable drowning_man = (AnimationDrawable)man.getResources().getDrawable(R.drawable.drowning_man);
+                drowning_man.start();
             }
         });
 
