@@ -17,7 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
         Button start = findViewById(R.id.animateBtn);
         ImageView man = findViewById(R.id.imageView);
-        
+        AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+        drowning_man.start();
+
+
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("click","button has been clicked");
+            }
+        });
 
     }
 }
