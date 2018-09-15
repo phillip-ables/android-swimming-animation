@@ -1,6 +1,7 @@
 package com.example.phill.fountainofyouth;
 
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,8 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button start = findViewById(R.id.animateBtn);
-        ImageView man = findViewById(R.id.imageView);
-        AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+        //ImageView man = findViewById(R.id.imageView);
+        //AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+        //got an error this is the best response on stack overflow
+        Drawable man = getResources().getDrawable(R.drawable.drowning_man);
+        AnimationDrawable drowning_man = (AnimationDrawable)man;
+
         drowning_man.start();
 
 
