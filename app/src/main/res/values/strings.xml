@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FountainOfYouth</string>
+    <integer name="anim_duration">150</integer>
 </resources>

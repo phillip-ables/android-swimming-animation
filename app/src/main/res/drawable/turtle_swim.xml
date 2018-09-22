@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/turtle_up"
+        android:duration="220"/>
+    <item android:drawable="@drawable/turtle_swim_01"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_02"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_03"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_04"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_05"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_06"
+        android:duration="150"/>
+    <item android:drawable="@drawable/turtle_swim_07"
+        android:duration="150"/>
+</animation-list>

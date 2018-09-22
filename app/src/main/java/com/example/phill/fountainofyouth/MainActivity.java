@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("click","button has been clicked");
                 ImageView man = findViewById(R.id.imageView);
-                man.setImageResource(R.drawable.drowning_man);
+                man.setImageResource(R.drawable.turtle_swim);
                 AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
                 //got an error this is the best response on stack overflow
                 //Drawable manDraw = man.getResources().getDrawable(R.drawable.drowning_man);
