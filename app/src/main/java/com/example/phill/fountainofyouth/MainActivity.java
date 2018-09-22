@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button start = findViewById(R.id.animateBtn);
+        Button either = findViewById(R.id.animateBtn);
+        Button or = findViewById(R.id.btnOr);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        either.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("click","button has been clicked");
                 ImageView man = findViewById(R.id.imageView);
                 man.setImageResource(R.drawable.turtle_swim);
                 AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
@@ -33,5 +33,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        or.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageView man = findViewById(R.id.imageView);
+                man.setImageResource(R.drawable.turtle_swim_other);
+                AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+                drowning_man.start();
+            }
+        });
     }
 }
