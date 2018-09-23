@@ -16,10 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button either = findViewById(R.id.animateBtn);
-        Button or = findViewById(R.id.btnOr);
+        Button origional = findViewById(R.id.btnOrigional);
+        Button secondTry = findViewById(R.id.btnAggressive);
+        Button newOne = findViewById(R.id.btnForward);
+        Button newAlt = findViewById(R.id.btnKickSwim);
 
-        either.setOnClickListener(new View.OnClickListener() {
+        origional.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ImageView man = findViewById(R.id.imageView);
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        or.setOnClickListener(new View.OnClickListener() {
+        secondTry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ImageView man = findViewById(R.id.imageView);
@@ -42,5 +44,26 @@ public class MainActivity extends AppCompatActivity {
                 drowning_man.start();
             }
         });
+
+        newOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageView man = findViewById(R.id.imageView);
+                man.setImageResource(R.drawable.turtle_swim_forward);
+                AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+                drowning_man.start();
+            }
+        });
+
+        newAlt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageView man = findViewById(R.id.imageView);
+                man.setImageResource(R.drawable.turtle_swim_forward_alt);
+                AnimationDrawable drowning_man = (AnimationDrawable)man.getDrawable();
+                drowning_man.start();
+            }
+        });
+
     }
 }
