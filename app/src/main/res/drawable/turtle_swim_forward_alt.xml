@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector><?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@drawable/turtle_swim_forward_01"
     android:duration="@integer/anim_duration"/>
@@ -9,7 +6,7 @@
     android:duration="@integer/anim_duration"/>
 <item android:drawable="@drawable/turtle_swim_forward_03"
     android:duration="@integer/anim_duration"/>
-<item android:drawable="@drawable/turtle_swim_forward_04"
+<item android:drawable="@drawable/turtle_swim_forward_04_alt"
     android:duration="@integer/anim_duration"/>
 <item android:drawable="@drawable/turtle_swim_forward_05_alt"
     android:duration="@integer/anim_duration"/>
@@ -17,6 +14,6 @@
     android:duration="@integer/anim_duration"/>
 <item android:drawable="@drawable/turtle_swim_forward_07_alt"
     android:duration="@integer/anim_duration"/>
-<item android:drawable="@drawable/turtle_swim_forward_08_alt"
+<item android:drawable="@drawable/turtle_swim_forward_08"
     android:duration="@integer/anim_duration"/>
 </animation-list>
